@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before, /*псевдоклассы*/
+*::after{
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a {
+    display: inline-block; /*снаружи как строчный, внутри как блочный*/
+    color: inherit; /*наследует от родителя*/
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body{
+    min-width: 320px;
+    word-break: normal; /*для правильного переноса*/
+    font-family: 'Inter', 'Righteous', 'Urbanist', san-serif;
+}
+
+/* global style - обнуление для списков и кнопок*/
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*-------------------------------------------header----------------------------------------------------*/
+
+.header {
+    padding-top: 32px;
+    background-color: #1C1814;
+}
+
+.container {
+    max-width: 1920px;
+    height: 93px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: stretch
+}
+
+
+/*.header-nav-left {
+    display: flex;
+    justify-content: space-between;
+}
+*/
+.header-nav-left {
+    display: flex;
+    padding-top: 18px;
+}
+
+.header-nav-right {
+    display: flex;
+    padding-top: 18px;
+}
+
+.header-list-left {
+    display: flex;
+    gap: 48px;
+}
+
+.logo-contain {
+    text-align: center;
+    width: 72px;
+    height: 60px;
+}
+
+.header-list-right {
+    display: flex;
+    gap: 48px;
+    margin-left: auto;
+}
+
+.header-list-link {
+    color: #FFFFFF;
+    font: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.navigation-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.navigation-left {
+    display: flex;
+    gap: 48px;
+}
+
+/*---------------------------------Body--------------------------------------*/
+/*-------------------------------Section first------------------------------*/
+
+.container-enjoy-coffee {
+    height: 739px;
+    max-width: 1920px;
+}
+
+.enjoy-coffee {
+    height: 739px;
+    max-width: 1920px;
+    background-image: url(../img/back.png);
+    background-size: 100%;
+}
+
+.div-text-enjoy {
+    padding-top: 80px;
+    padding-left: 12%;
+}
+
+.h1 {
+    font-family: "Righteous";
+    font-size: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 529px;
+}
+
+.p-enjoy-coffee {
+    color: white;
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    width: 511px;
+    padding-top: 32px;
+}
+
+.div-btn-test {
+    width: 202px;
+    height: 70px;
+    padding-top: 64px;
+}
+
+.btn-test-coffee {
+    width: 180px;
+    height: 55px;
+    color: #FFFFFF;
+    background-color: #C99E71;
+}
